@@ -1,0 +1,20 @@
+!File created by the GAMESS Input Deck Generator Plugin for Avogadro
+ $BASIS GBASIS=STO NGAUSS=3 $END
+ $CONTRL SCFTYP=UHF RUNTYP=SADPOINT $END
+ $STATPT hssend=.t. OPTTOL=0.0005 NSTEP=50 $END
+ $STATPT HESS=calc ihrep=5 $END
+ $FORCE nvib=2 $END
+ $ZMAT DLC=.t. auto=.t. nonvdw(1)=1,7,1,2,2,3 $END
+!$ZMAT IFZMAT(1)=1,2,3 fvalue(1)=2.00,2.00 $END
+
+ $DATA 
+Title
+C1
+N     7.0    -7.32734108     2.75741673    -0.21713422
+C     6.0    -5.80113888     2.79293752    -0.15029018
+Cl    17.0    -5.14559078     3.73960996     0.81099480
+H     1.0    -5.37110806     2.43221498    -1.08318174
+H     1.0    -7.75420618     2.86205268     0.73032844
+H     1.0    -7.64691877     1.84489167    -0.60997164
+H     1.0    -7.71860600     3.51474738    -0.82352054
+ $END
